@@ -26,6 +26,15 @@ droplet_delete_tag_name:
     type: string
   example: env:test
 
+droplet_name:
+  in: query
+  name: name
+  description: Used to filter list response by Droplet name.
+  required: false
+  schema:
+    type: string
+  example: web-01
+
 x_dangerous:
   in: header
   name: X-Dangerous
